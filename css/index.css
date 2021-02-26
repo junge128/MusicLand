@@ -1,0 +1,211 @@
+body,html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	margin: 0 auto;
+	max-width: 1200px;
+	position: relative;
+	height: 85px;
+}
+
+@media (max-width: 1240px){
+.header {
+	margin: 0 50px;
+	min-width: 900px;
+}
+}
+
+.header>.logo {
+	position: absolute;
+	top: 22px;
+}
+
+.header>.top_nav {
+	position: absolute;
+	top:0;
+	left: 198px;
+	margin: 0;
+	padding: 0;
+}
+
+.header>.top_nav>li {
+	float: left;
+	list-style: none;
+}
+
+.header>.top_nav>li>a {
+	text-decoration: none;
+	color: black;
+	padding: 0 20px;
+	line-height: 85px;
+	height: 85px;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.header>.top_nav>li>.top_nav_current {
+	background-color: #31c27c;
+	color: white;
+	width: 50px;
+	text-align: center;
+}
+
+.header>.top_search {
+	position: absolute;
+	right: 284px;
+	top: 0px
+}
+
+.header>.top_search>.mod_search {
+	border: 1px solid #c9c9c9;
+	margin-top: 26px;
+	line-height: 36px;
+	border-radius: 3px;
+	padding: 0 33px 0 11px;
+	position: relative;
+}
+
+@media (max-width: 1000px){
+.header>.top_search>.mod_search>.input_search {
+	width: 150px;
+	height: 36px;
+	font-size: 14px;
+}
+}
+
+@media (min-width: 1000px){
+.header>.top_search>.mod_search>.input_search {
+	width: 220px;
+	height: 36px;
+	font-size: 14px;
+	background: 0 0;
+}
+}
+
+@media (min-width: 1240px){
+.header>.top_search>.mod_search>.input_search {
+	width: 400px;
+	height: 36px;
+	font-size: 14px;
+	background: 0 0;
+}
+}
+
+.search_button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0 none;
+	background-color: #fff;
+	width: 38px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.search_button>.sprite {
+	position: absolute;
+	top: 50%;
+	width: 16px;
+	height: 16px;
+	right: 11px;
+	margin-top: -8px;
+	font-size: 14px;
+	background-image: -webkit-image-set(url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3) 1x,url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite@2x.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=ce93ff148404a1f9918b8bc107e7dd6b) 2x);
+	background-position: 0 -40px;
+}
+
+.header>.login {
+	position: absolute;
+	top: 0;
+	right: 90px;
+	line-height: 90px;
+	height: 90px;
+}
+
+.header>.login>.login_btn {
+	border: 1px solid #31c27c;
+	background-color: #31c27c;
+	color: #fff;
+	text-decoration: none;
+	height: 39px;
+	line-height: 39px;
+	display: inline-block;
+	padding: 0 25px;
+	border: 3px;
+}
+
+.content {
+	background: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_profile_unlogin.jpg?max_age=2592000&v=13351eccb28020677a18a0f57349e5e6) 50% no-repeat;
+	height: 992px;
+	background-size: cover;
+}
+
+@media screen and (max-height: 800px)
+{
+.content {
+	height: 622px;
+}
+}
+
+.content>.section_text {
+	
+}
+
+.content>.section_text>h2 {
+	color: white;
+	margin: 0;
+	text-align: center;
+	font-size: 80px;
+	width: 100%;
+	padding-top: 350px;
+	animation: h2_animation 2s ;
+	-moz-animation: h2_animation 2s;	/* Firefox */
+	-webkit-animation: h2_animation 2s;	/* Safari 和 Chrome */
+	-o-animation: h2_animation 2s;	/* Opera */
+}
+
+@media screen and (max-height: 800px)
+{
+.content>.section_text>h2 {
+	padding-top: 150px;
+}
+}
+
+.content>.section_text>h3 {
+	color: white;
+	margin: 0;
+	text-align: center;
+	font-size: 50px;
+	width: 100%;
+	margin-top: 20px;
+	animation: h2_animation 2s ;
+	-moz-animation: h2_animation 2s;	/* Firefox */
+	-webkit-animation: h2_animation 2s;	/* Safari 和 Chrome */
+	-o-animation: h2_animation 2s;	/* Opera */
+}
+
+.footer {
+	background-color: #333;
+	height: 200px;
+	position: relative;
+}
+
+.footer>p {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	width: 100%;
+	text-align: center;
+	color: #999;
+}
+
+
+@keyframes h2_animation
+{
+from {transform: translate(0,-50px);opacity:0;}
+to {transform: translate(0,0);opacity: 1;}
+}
